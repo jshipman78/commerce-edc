@@ -72,8 +72,8 @@ export default function AboutPage() {
       {/* Community Image */}
       <section className="relative h-64 sm:h-80">
         <Image
-          src="/images/community/aerial-neighborhood.jpg"
-          alt="Aerial view of Commerce, Texas neighborhood"
+          src="/images/community/city-portraits.jpg"
+          alt="Commerce city officials"
           fill
           className="object-cover"
         />

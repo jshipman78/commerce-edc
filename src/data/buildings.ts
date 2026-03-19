@@ -9,7 +9,7 @@ export const buildings: Building[] = [
     price: 'Contact for Details',
     description: 'Large warehouse facility available in Commerce. Contact CEDC for full specifications, utilities, and availability status.',
     features: ['97,110 SF', 'Warehouse/Industrial'],
-    image: '/images/community/industry.jpeg',
+    image: '/images/hero/hydro-aerial.jpg',
   },
   {
     id: 'wdf-building',
@@ -19,6 +19,5 @@ export const buildings: Building[] = [
     price: 'Contact for Details',
     description: 'Industrial building on State Highway 11. Contact CEDC for full specifications and current availability.',
     features: ['26,500 SF', 'Highway 11 location'],
-    image: '/images/hero/hydro-aerial.jpg',
   },
 ];

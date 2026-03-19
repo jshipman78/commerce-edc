@@ -104,8 +104,8 @@ export default function WhyCommercePage() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/images/community/community-photos.jpg"
-                alt="Commerce, Texas community"
+                src="/images/community/campus-aerial.jpeg"
+                alt="Aerial view of East Texas A&amp;M University and downtown Commerce"
                 fill
                 className="object-cover"
               />

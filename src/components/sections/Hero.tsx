@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <section className="relative bg-navy py-20 sm:py-28 lg:py-36">
       <Image
-        src="/images/hero/commerce-aerial.jpg"
-        alt="Aerial view of Commerce, Texas"
+        src="/images/community/city-hall.jpg"
+        alt="Commerce, Texas City Hall at dusk"
         fill
         className="object-cover"
         priority
