@@ -43,6 +43,26 @@ export const majorEmployers: Employer[] = [
     industry: 'Manufacturing',
     description: 'Granite and stone facility, importing granite from South America.',
   },
+  {
+    name: 'Solar 76',
+    industry: 'Clean Energy Manufacturing',
+    description: 'American solar inverter and energy storage manufacturer at 400 Maple Street. Making clean energy accessible and affordable.',
+    website: 'https://www.solar76.com',
+  },
+  {
+    name: 'BigBattery',
+    employees: 48,
+    industry: 'Clean Energy Manufacturing',
+    description: 'LiFePO4 battery and energy storage manufacturer. Headquartered in Commerce, shipping nationwide.',
+    website: 'https://bigbattery.com',
+  },
+  {
+    name: 'OutBack Power Technologies',
+    employees: 50,
+    industry: 'Clean Energy Manufacturing',
+    description: 'Advanced solar inverter/charger and energy systems manufacturer with 300+ MW installed worldwide.',
+    website: 'https://outbackpower.com',
+  },
 ];
 
 export const partners: Partner[] = [
