@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { mainNavigation } from '@/data/navigation';
 import { siteConfig } from '@/data/site-config';
 import type { NavItem } from '@/types';
@@ -136,8 +137,14 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <span className="font-heading text-xl font-bold text-navy">Commerce</span>
-            <span className="text-sm font-medium text-amber">EDC</span>
+            <Image
+              src="/images/logo/edc-logo.png"
+              alt="Commerce EDC"
+              width={150}
+              height={116}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

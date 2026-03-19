@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { partners } from '@/data/employers';
 
 export function PartnerLogos() {
@@ -13,9 +14,19 @@ export function PartnerLogos() {
               key={partner.name}
               className="flex h-16 w-32 items-center justify-center rounded-lg bg-gray-50 px-4"
             >
-              <span className="text-center text-xs font-medium text-gray-500">
-                {partner.name}
-              </span>
+              {partner.logo ? (
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={120}
+                  height={60}
+                  className="max-h-12 w-auto object-contain"
+                />
+              ) : (
+                <span className="text-center text-xs font-medium text-gray-500">
+                  {partner.name}
+                </span>
+              )}
             </div>
           ))}
         </div>

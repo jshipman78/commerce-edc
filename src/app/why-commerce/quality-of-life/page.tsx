@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { CTASection } from '@/components/sections/CTASection';
 import { Card } from '@/components/ui/Card';
@@ -103,6 +104,17 @@ export default function QualityOfLifePage() {
           { label: 'Quality of Life' },
         ]}
       />
+
+      {/* Community Photo Banner */}
+      <section className="relative h-64 sm:h-80">
+        <Image
+          src="/images/community/bois-darc-bash.jpg"
+          alt="Bois d'Arc Bash community festival in Commerce, Texas"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy/30" />
+      </section>
 
       {/* Recreation & Community Assets */}
       <section className="bg-cream py-16 sm:py-20">

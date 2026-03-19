@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { CTASection } from '@/components/sections/CTASection';
 import { Card } from '@/components/ui/Card';
@@ -25,7 +26,20 @@ export default function AvailableBuildingsPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             {buildings.map((building) => (
               <Card key={building.id} className="flex flex-col">
-                <div className="aspect-video w-full rounded-lg bg-cream-dark" />
+                <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-cream-dark">
+                  {building.image ? (
+                    <Image
+                      src={building.image}
+                      alt={building.name}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="flex h-full items-center justify-center">
+                      <span className="text-sm text-gray-400">Building Image</span>
+                    </div>
+                  )}
+                </div>
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {building.features.map((f) => (
                     <Badge key={f} variant="navy">{f}</Badge>

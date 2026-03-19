@@ -13,6 +13,7 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['Railroad spur possible', 'Adjacent to NETEX/Blacklands Railroad'],
+    image: '/images/hero/commerce-aerial-wide.jpg',
   },
   {
     id: 'tract-2',
@@ -26,6 +27,7 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['12" water line', '36\' concrete street', 'Adjacent to Blacklands Railroad'],
+    image: '/images/hero/commerce-aerial-wide.jpg',
   },
   {
     id: 'tract-3',
@@ -39,6 +41,7 @@ export const properties: Property[] = [
     railServed: false,
     opportunityZone: false,
     features: ['Gentle topography', 'FM 3218 frontage'],
+    image: '/images/hero/commerce-aerial-wide.jpg',
   },
   {
     id: 'tract-4',
@@ -52,6 +55,7 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['Railroad spur possible', 'Lightly wooded', 'Gentle topography'],
+    image: '/images/hero/commerce-aerial-wide.jpg',
   },
   {
     id: 'tract-5',
@@ -65,6 +69,7 @@ export const properties: Property[] = [
     railServed: false,
     opportunityZone: false,
     features: ['Largest EDC tract (87 acres)', 'FM 3218 frontage', 'Gentle topography'],
+    image: '/images/hero/commerce-aerial-wide.jpg',
   },
   {
     id: 'tract-6',
@@ -78,5 +83,6 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['Railroad spur possible', 'Adjacent to operating businesses', 'Hwy 11 frontage'],
+    image: '/images/hero/commerce-aerial-wide.jpg',
   },
 ];

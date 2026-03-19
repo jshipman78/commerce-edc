@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { getAllNewsPosts, getNewsPost } from '@/lib/mdx';
@@ -27,6 +28,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.frontmatter.excerpt,
       type: 'article',
       publishedTime: post.frontmatter.date,
+      ...(post.frontmatter.image && {
+        images: [{ url: post.frontmatter.image }],
+      }),
     },
   };
 }
@@ -49,6 +53,17 @@ export default async function NewsPostPage({ params }: PageProps) {
 
       <article className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4">
+          {post.frontmatter.image && (
+            <div className="relative mb-10 aspect-video overflow-hidden rounded-lg">
+              <Image
+                src={post.frontmatter.image}
+                alt={post.frontmatter.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
           <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-navy prose-a:text-amber hover:prose-a:text-amber-dark">
             <MDXRemote source={post.content} />
           </div>

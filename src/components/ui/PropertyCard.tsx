@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Badge } from './Badge';
 import { Card } from './Card';
 import type { Property } from '@/types';
@@ -6,7 +7,20 @@ import type { Property } from '@/types';
 export function PropertyCard({ property }: { property: Property }) {
   return (
     <Card className="flex flex-col">
-      <div className="aspect-video w-full rounded-lg bg-cream-dark" />
+      <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-cream-dark">
+        {property.image ? (
+          <Image
+            src={property.image}
+            alt={property.name}
+            fill
+            className="object-cover"
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center">
+            <span className="text-sm text-gray-400">Property Image</span>
+          </div>
+        )}
+      </div>
       <div className="mt-4 flex flex-wrap gap-1.5">
         {property.railServed && <Badge variant="green">Rail-Served</Badge>}
         {property.opportunityZone && <Badge variant="amber">Opportunity Zone</Badge>}

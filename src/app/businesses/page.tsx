@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { CTASection } from '@/components/sections/CTASection';
 import { Card } from '@/components/ui/Card';
@@ -58,7 +59,17 @@ export default function BusinessesPage() {
                 key={partner.name}
                 className="flex h-20 w-40 items-center justify-center rounded-lg bg-white px-4 shadow-sm ring-1 ring-gray-200"
               >
-                <span className="text-center text-sm font-medium text-gray-600">{partner.name}</span>
+                {partner.logo ? (
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={140}
+                    height={70}
+                    className="max-h-14 w-auto object-contain"
+                  />
+                ) : (
+                  <span className="text-center text-sm font-medium text-gray-600">{partner.name}</span>
+                )}
               </div>
             ))}
           </div>

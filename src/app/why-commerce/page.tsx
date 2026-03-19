@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { CTASection } from '@/components/sections/CTASection';
 import { Card } from '@/components/ui/Card';
@@ -82,23 +83,33 @@ export default function WhyCommercePage() {
       {/* Introduction */}
       <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-heading text-3xl font-bold text-navy sm:text-4xl">
-              Commerce, Texas
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-gray-700">
-              Located 65 miles northeast of Dallas in Hunt County, Commerce is a growing
-              community of approximately 10,000 residents anchored by East Texas A&amp;M
-              University. With direct access to the I-30 corridor, two shortline railroads,
-              and a federally designated Opportunity Zone, Commerce offers a business
-              environment that is both competitive and collaborative.
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-gray-700">
-              The Commerce Economic Development Corporation works with companies at every
-              stage — from initial site selection through grand opening and beyond — providing
-              confidential assistance, incentive packaging, and connections to local and state
-              resources.
-            </p>
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="font-heading text-3xl font-bold text-navy sm:text-4xl">
+                Commerce, Texas
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-gray-700">
+                Located 65 miles northeast of Dallas in Hunt County, Commerce is a growing
+                community of approximately 10,000 residents anchored by East Texas A&amp;M
+                University. With direct access to the I-30 corridor, two shortline railroads,
+                and a federally designated Opportunity Zone, Commerce offers a business
+                environment that is both competitive and collaborative.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-gray-700">
+                The Commerce Economic Development Corporation works with companies at every
+                stage — from initial site selection through grand opening and beyond — providing
+                confidential assistance, incentive packaging, and connections to local and state
+                resources.
+              </p>
+            </div>
+            <div className="relative aspect-video overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/images/community/community-photos.jpg"
+                alt="Commerce, Texas community"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

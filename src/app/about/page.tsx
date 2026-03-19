@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { CTASection } from '@/components/sections/CTASection';
 import { Card } from '@/components/ui/Card';
@@ -68,6 +69,17 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Community Image */}
+      <section className="relative h-64 sm:h-80">
+        <Image
+          src="/images/community/aerial-neighborhood.jpg"
+          alt="Aerial view of Commerce, Texas neighborhood"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy/20" />
+      </section>
+
       {/* Board of Directors */}
       <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4">
@@ -82,7 +94,17 @@ export default function AboutPage() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {boardMembers.map((member) => (
               <Card key={member.name} className="text-center">
-                <div className="mx-auto h-24 w-24 rounded-full bg-navy/10" />
+                {member.image ? (
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={96}
+                    height={96}
+                    className="mx-auto h-24 w-24 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="mx-auto h-24 w-24 rounded-full bg-navy/10" />
+                )}
                 <h3 className="mt-4 font-heading text-lg font-bold text-navy">{member.name}</h3>
                 <p className="text-sm font-semibold text-amber">{member.title}</p>
                 <p className="mt-1 text-sm text-gray-500">{member.organization}</p>

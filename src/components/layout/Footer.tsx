@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteConfig } from '@/data/site-config';
 import { footerNavigation } from '@/data/navigation';
 
@@ -11,7 +12,14 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Contact column */}
           <div>
-            <h3 className="font-heading text-lg font-bold text-white">Commerce EDC</h3>
+            <Image
+              src="/images/logo/edc-logo.png"
+              alt="Commerce EDC"
+              width={150}
+              height={116}
+              className="h-12 w-auto brightness-0 invert"
+            />
+            <h3 className="mt-3 font-heading text-lg font-bold text-white">Commerce EDC</h3>
             <p className="mt-2 text-sm text-gray-300">{siteConfig.description}</p>
             <div className="mt-4 space-y-2 text-sm text-gray-300">
               <p>{siteConfig.address.street}</p>

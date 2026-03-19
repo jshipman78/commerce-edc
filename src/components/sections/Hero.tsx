@@ -1,9 +1,17 @@
+import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 
 export function Hero() {
   return (
     <section className="relative bg-navy py-20 sm:py-28 lg:py-36">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 to-navy/80" />
+      <Image
+        src="/images/hero/commerce-aerial.jpg"
+        alt="Aerial view of Commerce, Texas"
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 to-navy/75" />
       <div className="relative mx-auto max-w-7xl px-4 text-center">
         <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
           Where Industry Meets

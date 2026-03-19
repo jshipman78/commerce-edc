@@ -11,6 +11,7 @@ export const majorEmployers: Employer[] = [
     name: 'Hydro Aluminum Metals — Commerce',
     industry: 'Manufacturing',
     description: 'State-of-the-art aluminum recycling and manufacturing facility.',
+    logo: '/images/partners/hydro.png',
   },
   {
     name: 'Commerce ISD',
@@ -23,6 +24,7 @@ export const majorEmployers: Employer[] = [
     employees: 128,
     industry: 'Manufacturing',
     description: 'Manufactured and modular home builder.',
+    logo: '/images/partners/legacy-housing.png',
   },
   {
     name: 'Walmart',
@@ -34,6 +36,7 @@ export const majorEmployers: Employer[] = [
     name: 'Zurn PEX Inc',
     industry: 'Manufacturing',
     description: 'Plumbing and water management products manufacturing.',
+    logo: '/images/partners/zurn.png',
   },
   {
     name: 'KLZ Stone Group Inc',
@@ -43,9 +46,10 @@ export const majorEmployers: Employer[] = [
 ];
 
 export const partners: Partner[] = [
-  { name: 'City of Commerce', logo: '/images/partners/city-of-commerce.png' },
-  { name: 'Commerce Chamber of Commerce', logo: '/images/partners/commerce-chamber.png' },
-  { name: 'East Texas A&M University', logo: '/images/partners/etamu.png' },
-  { name: 'Commerce ISD', logo: '/images/partners/cisd.png' },
-  { name: 'Hunt County', logo: '/images/partners/hunt-county.png' },
+  { name: 'Bloomfield Homes', logo: '/images/partners/bloomfield-homes.png' },
+  { name: 'Hydro Aluminum', logo: '/images/partners/hydro.png' },
+  { name: 'Ben E. Keith', logo: '/images/partners/ben-e-keith.png' },
+  { name: 'Mohawk Industries', logo: '/images/partners/mohawk.png' },
+  { name: 'Legacy Housing', logo: '/images/partners/legacy-housing.png' },
+  { name: 'Zurn PEX', logo: '/images/partners/zurn.png' },
 ];
