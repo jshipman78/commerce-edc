@@ -108,7 +108,7 @@ export default function UtilitiesPage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 4.2M gal
               </p>
-              <p className="mt-1 text-xs text-gray-400">Gallons per day</p>
+              <p className="mt-1 text-xs text-gray-500">Gallons per day</p>
             </Card>
             <Card>
               <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
@@ -117,7 +117,7 @@ export default function UtilitiesPage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 2.345M gal
               </p>
-              <p className="mt-1 text-xs text-gray-400">Ground + elevated</p>
+              <p className="mt-1 text-xs text-gray-500">Ground + elevated</p>
             </Card>
             <Card>
               <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
@@ -126,7 +126,7 @@ export default function UtilitiesPage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 6&rdquo;&ndash;16&rdquo;
               </p>
-              <p className="mt-1 text-xs text-gray-400">Distribution mains</p>
+              <p className="mt-1 text-xs text-gray-500">Distribution mains</p>
             </Card>
           </div>
         </div>

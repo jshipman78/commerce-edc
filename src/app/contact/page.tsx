@@ -1,3 +1,4 @@
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { Card } from '@/components/ui/Card';
 import { ContactForm } from '@/components/sections/ContactForm';
@@ -48,7 +49,9 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
             <Card className="text-center">
-              <div className="text-2xl text-amber">📍</div>
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber/10">
+                <MapPin className="h-6 w-6 text-amber" />
+              </div>
               <h3 className="mt-2 font-semibold text-navy">Address</h3>
               <p className="mt-1 text-sm text-gray-600">
                 {siteConfig.address.street}<br />
@@ -56,14 +59,18 @@ export default function ContactPage() {
               </p>
             </Card>
             <Card className="text-center">
-              <div className="text-2xl text-amber">📞</div>
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber/10">
+                <Phone className="h-6 w-6 text-amber" />
+              </div>
               <h3 className="mt-2 font-semibold text-navy">Phone</h3>
               <p className="mt-1 text-sm text-gray-600">
                 <a href={`tel:${siteConfig.phone}`} className="hover:text-amber">{siteConfig.phone}</a>
               </p>
             </Card>
             <Card className="text-center">
-              <div className="text-2xl text-amber">✉️</div>
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber/10">
+                <Mail className="h-6 w-6 text-amber" />
+              </div>
               <h3 className="mt-2 font-semibold text-navy">Email</h3>
               <p className="mt-1 text-sm text-gray-600">
                 <a href={`mailto:${siteConfig.email}`} className="hover:text-amber">{siteConfig.email}</a>

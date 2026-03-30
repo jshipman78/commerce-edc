@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ClipboardList, FileText, Scale, Shield } from 'lucide-react';
 import { SectionHero } from '@/components/sections/SectionHero';
 import { Card } from '@/components/ui/Card';
 import { generatePageMetadata } from '@/lib/metadata';
@@ -8,6 +9,37 @@ export const metadata = generatePageMetadata({
   description: 'Board agendas, meeting minutes, and public policies of the Commerce Economic Development Corporation.',
   path: '/transparency',
 });
+
+const items = [
+  {
+    href: '/transparency/agendas',
+    icon: ClipboardList,
+    title: 'Board Agendas',
+    description: 'View notices and agendas for CEDC board meetings, sorted by date. Available as downloadable PDFs.',
+    linkText: 'View Agendas',
+  },
+  {
+    href: '/transparency/minutes',
+    icon: FileText,
+    title: 'Board Minutes',
+    description: 'Access approved minutes from CEDC board meetings. Available as downloadable PDFs.',
+    linkText: 'View Minutes',
+  },
+  {
+    href: '/equal-opportunity-policy',
+    icon: Scale,
+    title: 'Equal Opportunity Policy',
+    description: 'Read the Commerce EDC Equal Opportunity Public Notification Policy.',
+    linkText: 'Read Policy',
+  },
+  {
+    href: '/privacy-policy',
+    icon: Shield,
+    title: 'Privacy Policy',
+    description: 'Review the Commerce EDC website privacy policy.',
+    linkText: 'Read Policy',
+  },
+];
 
 export default function TransparencyPage() {
   return (
@@ -21,57 +53,23 @@ export default function TransparencyPage() {
       <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4">
           <div className="grid gap-6 sm:grid-cols-2">
-            <Link href="/transparency/agendas" className="group">
-              <Card className="transition-shadow group-hover:shadow-md">
-                <div className="text-3xl">📋</div>
-                <h2 className="mt-4 font-heading text-xl font-bold text-navy">Board Agendas</h2>
-                <p className="mt-2 text-sm text-gray-600">
-                  View notices and agendas for CEDC board meetings, sorted by date. Available as downloadable PDFs.
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-amber group-hover:text-amber-dark">
-                  View Agendas &rarr;
-                </span>
-              </Card>
-            </Link>
-
-            <Link href="/transparency/minutes" className="group">
-              <Card className="transition-shadow group-hover:shadow-md">
-                <div className="text-3xl">📝</div>
-                <h2 className="mt-4 font-heading text-xl font-bold text-navy">Board Minutes</h2>
-                <p className="mt-2 text-sm text-gray-600">
-                  Access approved minutes from CEDC board meetings. Available as downloadable PDFs.
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-amber group-hover:text-amber-dark">
-                  View Minutes &rarr;
-                </span>
-              </Card>
-            </Link>
-
-            <Link href="/equal-opportunity-policy" className="group">
-              <Card className="transition-shadow group-hover:shadow-md">
-                <div className="text-3xl">⚖️</div>
-                <h2 className="mt-4 font-heading text-xl font-bold text-navy">Equal Opportunity Policy</h2>
-                <p className="mt-2 text-sm text-gray-600">
-                  Read the Commerce EDC Equal Opportunity Public Notification Policy.
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-amber group-hover:text-amber-dark">
-                  Read Policy &rarr;
-                </span>
-              </Card>
-            </Link>
-
-            <Link href="/privacy-policy" className="group">
-              <Card className="transition-shadow group-hover:shadow-md">
-                <div className="text-3xl">🔒</div>
-                <h2 className="mt-4 font-heading text-xl font-bold text-navy">Privacy Policy</h2>
-                <p className="mt-2 text-sm text-gray-600">
-                  Review the Commerce EDC website privacy policy.
-                </p>
-                <span className="mt-4 inline-block text-sm font-semibold text-amber group-hover:text-amber-dark">
-                  Read Policy &rarr;
-                </span>
-              </Card>
-            </Link>
+            {items.map((item) => {
+              const Icon = item.icon;
+              return (
+                <Link key={item.href} href={item.href} className="group">
+                  <Card className="transition-shadow group-hover:shadow-xl">
+                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-amber/10">
+                      <Icon className="h-6 w-6 text-amber" />
+                    </div>
+                    <h2 className="mt-4 font-heading text-xl font-bold text-navy">{item.title}</h2>
+                    <p className="mt-2 text-sm text-gray-600">{item.description}</p>
+                    <span className="mt-4 inline-block text-sm font-semibold text-amber group-hover:text-amber-dark">
+                      {item.linkText} &rarr;
+                    </span>
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

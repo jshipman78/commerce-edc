@@ -157,7 +157,7 @@ export default function CostOfLivingPage() {
               <p className="mt-1 font-heading text-2xl font-bold text-green">
                 0%
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 Texas advantage for employees
               </p>
             </Card>
@@ -168,7 +168,7 @@ export default function CostOfLivingPage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 60 mi.
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 Via I-30 — metro amenities nearby
               </p>
             </Card>
@@ -179,7 +179,7 @@ export default function CostOfLivingPage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 9,090
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 Population — community feel
               </p>
             </Card>

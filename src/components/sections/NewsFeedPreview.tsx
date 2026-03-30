@@ -6,25 +6,25 @@ import type { NewsPost } from '@/types';
 
 function NewsCard({ post }: { post: NewsPost }) {
   return (
-    <Card className="flex flex-col">
+    <Card className="group flex flex-col">
       {post.image && (
         <div className="relative -mx-6 -mt-6 mb-4 aspect-video overflow-hidden rounded-t-lg">
           <Image
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       )}
-      <time className="text-xs text-gray-400">{formatDate(post.date)}</time>
-      <h3 className="mt-2 font-heading text-lg font-bold text-navy">
+      <time className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-400">{formatDate(post.date)}</time>
+      <h3 className="mt-2 font-heading text-lg font-bold leading-snug text-navy">
         <Link href={`/news/${post.slug}`} className="hover:text-amber">
           {post.title}
         </Link>
       </h3>
-      <p className="mt-2 flex-1 text-sm text-gray-600 line-clamp-3">{post.excerpt}</p>
-      <Link href={`/news/${post.slug}`} className="mt-3 inline-block text-sm font-semibold text-amber hover:text-amber-dark">
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600 line-clamp-3">{post.excerpt}</p>
+      <Link href={`/news/${post.slug}`} className="mt-4 inline-block text-sm font-semibold text-amber hover:text-amber-dark">
         Read More &rarr;
       </Link>
     </Card>

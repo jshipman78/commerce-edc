@@ -34,8 +34,8 @@ export default function AboutPage() {
       {/* Mission & History */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4">
-          <h2 className="font-heading text-2xl font-bold text-navy">Our Mission</h2>
-          <p className="mt-4 text-gray-600 leading-relaxed">
+          <h2 className="font-heading text-3xl font-bold text-navy">Our Mission</h2>
+          <p className="mt-4 text-lg leading-[1.75] text-gray-600">
             The Commerce Economic Development Corporation (CEDC) is a nonprofit organization
             established to promote economic development in Commerce, Texas through the recruitment,
             retention, and expansion of business and industry. The CEDC was established in January 1994
@@ -43,8 +43,8 @@ export default function AboutPage() {
             development.
           </p>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-navy">What is a 4A Corporation?</h2>
-          <p className="mt-4 text-gray-600 leading-relaxed">
+          <h2 className="mt-14 font-heading text-3xl font-bold text-navy">What is a 4A Corporation?</h2>
+          <p className="mt-4 text-lg leading-[1.75] text-gray-600">
             The CEDC operates under the Texas Development Corporation Act as a Type A (4A) economic
             development corporation. The 4A sales tax generates revenue dedicated exclusively to
             economic development projects — including land acquisition, infrastructure development,
@@ -52,8 +52,8 @@ export default function AboutPage() {
             effectively for business and industrial development projects.
           </p>
 
-          <h2 className="mt-12 font-heading text-2xl font-bold text-navy">History & Achievements</h2>
-          <div className="mt-4 space-y-4 text-gray-600 leading-relaxed">
+          <h2 className="mt-14 font-heading text-3xl font-bold text-navy">History & Achievements</h2>
+          <div className="mt-4 space-y-4 text-lg leading-[1.75] text-gray-600">
             <p>
               Since its founding, the CEDC has invested in the growth of Commerce through strategic
               land acquisitions, infrastructure improvements, and business incentive programs:
@@ -84,8 +84,8 @@ export default function AboutPage() {
       <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center">
-            <h2 className="font-heading text-2xl font-bold text-navy">Board of Directors</h2>
-            <p className="mt-2 text-gray-600">
+            <h2 className="font-heading text-3xl font-bold text-navy">Board of Directors</h2>
+            <p className="mt-3 text-lg text-gray-600">
               The CEDC board is composed of local business and community leaders committed to
               Commerce&apos;s economic growth.
             </p>
@@ -107,7 +107,7 @@ export default function AboutPage() {
                 )}
                 <h3 className="mt-4 font-heading text-lg font-bold text-navy">{member.name}</h3>
                 <p className="text-sm font-semibold text-amber">{member.title}</p>
-                <p className="mt-1 text-sm text-gray-500">{member.organization}</p>
+                <p className="mt-1 text-sm text-gray-600">{member.organization}</p>
               </Card>
             ))}
           </div>

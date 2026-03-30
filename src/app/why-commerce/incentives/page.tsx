@@ -172,14 +172,14 @@ export default function IncentivesPage() {
               <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
                 Opportunity Zone
               </h2>
-              <p className="mt-6 text-lg leading-relaxed text-gray-300">
+              <p className="mt-6 text-lg leading-relaxed text-gray-200">
                 Commerce is home to a federally designated Opportunity Zone (OZ),
                 created under the Tax Cuts and Jobs Act of 2017. Opportunity Zones
                 are designed to spur economic development and job creation in
                 distressed communities by providing tax benefits to investors who
                 invest eligible capital gains into Qualified Opportunity Funds.
               </p>
-              <p className="mt-4 text-lg leading-relaxed text-gray-300">
+              <p className="mt-4 text-lg leading-relaxed text-gray-200">
                 Investors who deploy capital gains into a Qualified Opportunity Fund
                 can benefit from tax deferral on the original gain, potential
                 reduction in the taxable amount, and elimination of capital gains
@@ -211,7 +211,7 @@ export default function IncentivesPage() {
                   ].map((item) => (
                     <li key={item.benefit}>
                       <p className="font-semibold text-amber">{item.benefit}</p>
-                      <p className="mt-1 text-sm text-gray-300">{item.detail}</p>
+                      <p className="mt-1 text-sm text-gray-200">{item.detail}</p>
                     </li>
                   ))}
                 </ul>

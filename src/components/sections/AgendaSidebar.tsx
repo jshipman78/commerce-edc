@@ -23,7 +23,7 @@ export function AgendaSidebar() {
             >
               {doc.title}
             </a>
-            <p className="text-xs text-gray-400">{formatDate(doc.date)}</p>
+            <p className="text-xs text-gray-500">{formatDate(doc.date)}</p>
           </div>
         ))}
       </div>

@@ -13,7 +13,7 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['Railroad spur possible', 'Adjacent to NETEX/Blacklands Railroad'],
-    image: '/images/community/railroad-sunset.jpg',
+    image: '/images/wp-archive/aerials/CEDC-Aerials-0849_Sub_01_1_12_layer.jpeg',
   },
   {
     id: 'tract-2',
@@ -27,6 +27,7 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['12" water line', '36\' concrete street', 'Adjacent to Blacklands Railroad'],
+    image: '/images/wp-archive/edc-projects/EDC-Project-54-scaled.jpg',
   },
   {
     id: 'tract-3',
@@ -40,7 +41,7 @@ export const properties: Property[] = [
     railServed: false,
     opportunityZone: false,
     features: ['Gentle topography', 'FM 3218 frontage'],
-    image: '/images/community/rural-land.jpg',
+    image: '/images/wp-archive/aerials/CEDC-Aerials-0857-scaled.jpg',
   },
   {
     id: 'tract-4',
@@ -54,6 +55,7 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['Railroad spur possible', 'Lightly wooded', 'Gentle topography'],
+    image: '/images/wp-archive/aerials/CEDC-Aerials-0849_Sub_01_8_13_layer.jpeg',
   },
   {
     id: 'tract-5',
@@ -67,7 +69,7 @@ export const properties: Property[] = [
     railServed: false,
     opportunityZone: false,
     features: ['Largest EDC tract (87 acres)', 'FM 3218 frontage', 'Gentle topography'],
-    image: '/images/community/water-tower.jpg',
+    image: '/images/wp-archive/aerials/CEDC-Aerials-0849_Sub_01_3_13_layer.jpeg',
   },
   {
     id: 'tract-6',
@@ -81,6 +83,6 @@ export const properties: Property[] = [
     railServed: true,
     opportunityZone: false,
     features: ['Railroad spur possible', 'Adjacent to operating businesses', 'Hwy 11 frontage'],
-    image: '/images/hero/hydro-aerial.jpg',
+    image: '/images/wp-archive/edc-projects/EDC-Project-44-scaled.jpg',
   },
 ];

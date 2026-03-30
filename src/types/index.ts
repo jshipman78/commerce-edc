@@ -95,6 +95,7 @@ export interface BoardDocument {
   date: string;
   type: 'agenda' | 'minutes';
   pdfUrl: string;
+  additionalPdfs?: string[];
   year: number;
 }
 
@@ -170,4 +171,21 @@ export interface BroadbandProvider {
   maxDownload: string;
   maxUpload: string;
   coverage: string;
+}
+
+// Report Generator
+export interface ReportSection {
+  id: string;
+  title: string;
+  description: string;
+  page: string;
+  category: 'data-center' | 'why-commerce' | 'properties' | 'general';
+  icon: string;
+}
+
+export interface ReportCart {
+  sections: string[];
+  includeExecutiveSummary: boolean;
+  includeCoverPage: boolean;
+  contactEmail?: string;
 }

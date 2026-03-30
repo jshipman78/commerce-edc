@@ -78,7 +78,7 @@ export default function DataCenterPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {dataPages.map((page) => (
               <Link key={page.href} href={page.href} className="group">
-                <Card className="h-full transition-shadow duration-200 group-hover:shadow-md group-hover:ring-amber">
+                <Card className="h-full transition-shadow duration-200 group-hover:shadow-xl group-hover:ring-amber">
                   <h3 className="font-heading text-lg font-bold text-navy group-hover:text-amber">
                     {page.title}
                   </h3>

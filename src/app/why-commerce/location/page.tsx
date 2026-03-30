@@ -126,7 +126,7 @@ export default function LocationPage() {
                     'Population: approximately 10,000',
                     'Home to East Texas A&M University',
                   ].map((item) => (
-                    <li key={item} className="flex items-start text-sm text-gray-300">
+                    <li key={item} className="flex items-start text-sm text-gray-200">
                       <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber" />
                       {item}
                     </li>

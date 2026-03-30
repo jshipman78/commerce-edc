@@ -44,7 +44,7 @@ export default function WorkforcePage() {
               <p className="mt-1 font-heading text-3xl font-bold text-navy">
                 9,090
               </p>
-              <p className="mt-1 text-xs text-gray-400">2021 Census Est.</p>
+              <p className="mt-1 text-xs text-gray-500">2021 Census Est.</p>
             </Card>
             <Card>
               <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
@@ -53,7 +53,7 @@ export default function WorkforcePage() {
               <p className="mt-1 font-heading text-3xl font-bold text-navy">
                 99,956
               </p>
-              <p className="mt-1 text-xs text-gray-400">2021 Census Est.</p>
+              <p className="mt-1 text-xs text-gray-500">2021 Census Est.</p>
             </Card>
             <Card>
               <p className="text-sm font-medium uppercase tracking-wider text-gray-500">
@@ -62,7 +62,7 @@ export default function WorkforcePage() {
               <p className="mt-1 font-heading text-3xl font-bold text-navy">
                 ~150,000+
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 Labor shed population
               </p>
             </Card>
@@ -73,7 +73,7 @@ export default function WorkforcePage() {
               <p className="mt-1 font-heading text-3xl font-bold text-navy">
                 7.6M+
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 60 mi. via I-30
               </p>
             </Card>
@@ -110,7 +110,7 @@ export default function WorkforcePage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 100+
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 Undergraduate, Master&rsquo;s &amp; Doctoral
               </p>
             </Card>
@@ -121,7 +121,7 @@ export default function WorkforcePage() {
               <p className="mt-1 font-heading text-2xl font-bold text-navy">
                 ~850
               </p>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500">
                 Largest employer in Commerce
               </p>
             </Card>

@@ -65,14 +65,31 @@ export function YearFilter({ documents }: { documents: BoardDocument[] }) {
                   {doc.title}
                 </td>
                 <td className="whitespace-nowrap px-4 py-3 text-right">
-                  <a
-                    href={doc.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-amber hover:text-amber-dark"
-                  >
-                    PDF ↓
-                  </a>
+                  {doc.pdfUrl ? (
+                    <span className="flex items-center justify-end gap-2">
+                      <a
+                        href={doc.pdfUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-amber hover:text-amber-dark"
+                      >
+                        PDF ↓
+                      </a>
+                      {doc.additionalPdfs?.map((pdf, i) => (
+                        <a
+                          key={i}
+                          href={pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold text-amber hover:text-amber-dark"
+                        >
+                          PDF {i + 2} ↓
+                        </a>
+                      ))}
+                    </span>
+                  ) : (
+                    <span className="text-sm text-gray-400">—</span>
+                  )}
                 </td>
               </tr>
             ))}

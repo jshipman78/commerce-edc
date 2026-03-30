@@ -120,7 +120,7 @@ export default function WhyCommercePage() {
           <div className="grid gap-8 md:grid-cols-2">
             {sections.map((section) => (
               <Link key={section.href} href={section.href} className="group">
-                <Card className="h-full transition-shadow duration-200 group-hover:shadow-md group-hover:ring-amber/50">
+                <Card className="h-full transition-shadow duration-200 group-hover:shadow-xl group-hover:ring-amber/50">
                   <div className="flex items-start justify-between">
                     <h3 className="font-heading text-2xl font-bold text-navy">
                       {section.title}

@@ -39,7 +39,7 @@ export default function BusinessesPage() {
                   <p className="mt-2 text-2xl font-bold text-amber">{employer.employees}+</p>
                 )}
                 {employer.employees && (
-                  <p className="text-xs text-gray-400">employees</p>
+                  <p className="text-xs text-gray-500">employees</p>
                 )}
                 {employer.description && (
                   <p className="mt-3 text-sm text-gray-600">{employer.description}</p>
@@ -65,7 +65,7 @@ export default function BusinessesPage() {
                     alt={partner.name}
                     width={140}
                     height={70}
-                    className="max-h-14 w-auto object-contain"
+                    className="max-h-14 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
                   />
                 ) : (
                   <span className="text-center text-sm font-medium text-gray-600">{partner.name}</span>

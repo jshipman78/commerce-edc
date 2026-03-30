@@ -14,10 +14,10 @@ interface ButtonProps {
 }
 
 const variants: Record<ButtonVariant, string> = {
-  primary: 'bg-navy text-white hover:bg-navy-light',
-  secondary: 'bg-white text-navy border border-navy hover:bg-cream',
+  primary: 'bg-navy text-white hover:bg-navy-light hover:shadow-md',
+  secondary: 'bg-white text-navy border border-navy hover:bg-cream hover:shadow-md',
   ghost: 'text-navy hover:bg-cream',
-  cta: 'bg-amber text-white hover:bg-amber-dark',
+  cta: 'bg-amber text-white hover:bg-amber-dark hover:shadow-md hover:shadow-amber/20',
 };
 
 export function Button({
@@ -29,7 +29,7 @@ export function Button({
   onClick,
   disabled,
 }: ButtonProps) {
-  const base = 'inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber disabled:opacity-50 disabled:pointer-events-none';
+  const base = 'inline-flex items-center justify-center rounded-lg px-6 py-3 text-[0.875rem] font-semibold tracking-wide transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber disabled:opacity-50 disabled:pointer-events-none';
 
   if (href) {
     return (

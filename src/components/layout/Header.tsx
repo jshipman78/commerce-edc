@@ -9,7 +9,7 @@ import type { NavItem } from '@/types';
 
 function MegaMenuDropdown({ item }: { item: NavItem }) {
   return (
-    <div className="absolute left-0 top-full z-50 mt-0 w-72 rounded-b-lg bg-white shadow-lg ring-1 ring-gray-200">
+    <div className="absolute left-0 top-full z-50 mt-0 w-72 rounded-b-lg border-t-2 border-amber bg-white shadow-xl ring-1 ring-gray-200/60">
       <div className="p-4">
         {item.children?.map((child) => (
           <Link
@@ -19,7 +19,7 @@ function MegaMenuDropdown({ item }: { item: NavItem }) {
           >
             <span className="block text-sm font-semibold text-navy">{child.label}</span>
             {child.description && (
-              <span className="block text-xs text-gray-500 mt-0.5">{child.description}</span>
+              <span className="block text-xs text-gray-600 mt-0.5">{child.description}</span>
             )}
           </Link>
         ))}
@@ -110,7 +110,7 @@ function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           >
             Contact Us
           </Link>
-          <p className="mt-3 text-center text-sm text-gray-500">{siteConfig.phone}</p>
+          <p className="mt-3 text-center text-sm text-gray-600">{siteConfig.phone}</p>
         </div>
       </div>
     </div>
@@ -122,27 +122,27 @@ export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-40 bg-white shadow-sm">
+    <header className="sticky top-0 z-40 bg-white/95 shadow-sm backdrop-blur-md border-b border-gray-100">
       {/* Top bar */}
       <div className="bg-navy text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 text-sm">
-          <a href={`tel:${siteConfig.phone}`} className="hover:text-amber-light">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 text-[0.8rem] tracking-wide">
+          <a href={`tel:${siteConfig.phone}`} className="font-medium hover:text-amber-light">
             {siteConfig.phone}
           </a>
-          <span>{siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</span>
+          <span className="hidden text-white/80 sm:block">{siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</span>
         </div>
       </div>
 
       {/* Main nav */}
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo/edc-logo.png"
               alt="Commerce EDC"
-              width={150}
-              height={116}
-              className="h-10 w-auto"
+              width={200}
+              height={155}
+              className="h-16 w-auto"
               priority
             />
           </Link>

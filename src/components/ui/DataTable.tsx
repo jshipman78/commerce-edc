@@ -15,7 +15,7 @@ export function DataTable({ headers, rows, source, className }: DataTableProps) 
               {headers.map((header, i) => (
                 <th
                   key={i}
-                  className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-white"
+                  className="px-4 py-3.5 text-left text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-white"
                 >
                   {header}
                 </th>
@@ -26,7 +26,7 @@ export function DataTable({ headers, rows, source, className }: DataTableProps) 
             {rows.map((row, i) => (
               <tr key={i} className={i % 2 === 1 ? 'bg-cream/50' : ''}>
                 {row.map((cell, j) => (
-                  <td key={j} className="whitespace-nowrap px-4 py-3 text-sm text-gray-700">
+                  <td key={j} className="whitespace-nowrap px-4 py-3 text-sm leading-snug text-gray-700">
                     {cell}
                   </td>
                 ))}
@@ -36,7 +36,7 @@ export function DataTable({ headers, rows, source, className }: DataTableProps) 
         </table>
       </div>
       {source && (
-        <p className="mt-2 text-right text-xs text-gray-400">Source: {source}</p>
+        <p className="mt-2 text-right text-xs text-gray-500">Source: {source}</p>
       )}
     </div>
   );

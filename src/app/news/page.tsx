@@ -25,12 +25,12 @@ export default function NewsPage() {
 
       <section className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4">
-          <div className="space-y-6">
+          <div className="space-y-8">
             {posts.map((post) => (
               <Card key={post.slug} className="overflow-hidden">
                 <div className="flex flex-col sm:flex-row sm:gap-6">
                   {post.image && (
-                    <div className="relative -mx-6 -mt-6 mb-4 aspect-video sm:mx-0 sm:mt-0 sm:mb-0 sm:w-48 sm:flex-shrink-0">
+                    <div className="relative -mx-6 -mt-6 mb-4 aspect-video sm:mx-0 sm:mt-0 sm:mb-0 sm:w-52 sm:flex-shrink-0">
                       <Image
                         src={post.image}
                         alt={post.title}
@@ -40,18 +40,18 @@ export default function NewsPage() {
                     </div>
                   )}
                   <div className="flex-1">
-                    <time className="text-xs text-gray-400">{formatDate(post.date)}</time>
-                    <h2 className="mt-2 font-heading text-xl font-bold text-navy">
-                      <Link href={`/news/${post.slug}`} className="hover:text-amber">
+                    <time className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-400">{formatDate(post.date)}</time>
+                    <h2 className="mt-2 font-heading text-xl font-bold leading-snug text-navy">
+                      <Link href={`/news/${post.slug}`} className="hover:text-amber transition-colors">
                         {post.title}
                       </Link>
                     </h2>
-                    <p className="mt-2 text-sm text-gray-600">{post.excerpt}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-600 line-clamp-2">{post.excerpt}</p>
                     <Link
                       href={`/news/${post.slug}`}
-                      className="mt-3 inline-block text-sm font-semibold text-amber hover:text-amber-dark"
+                      className="mt-4 inline-block text-sm font-semibold tracking-wide text-amber hover:text-amber-dark transition-colors"
                     >
-                      Read More &rarr;
+                      Read Article &rarr;
                     </Link>
                   </div>
                 </div>
