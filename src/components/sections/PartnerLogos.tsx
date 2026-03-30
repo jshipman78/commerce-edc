@@ -8,22 +8,22 @@ export function PartnerLogos() {
         <p className="text-center text-sm font-semibold uppercase tracking-wider text-gray-600">
           Community Partners
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-8">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-10">
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="flex h-16 w-32 items-center justify-center rounded-lg bg-gray-100 px-4"
+              className="flex h-24 w-44 items-center justify-center rounded-lg bg-gray-100 px-5"
             >
               {partner.logo ? (
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={120}
-                  height={60}
-                  className="max-h-12 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
+                  width={160}
+                  height={80}
+                  className="max-h-16 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
                 />
               ) : (
-                <span className="text-center text-xs font-medium text-gray-500">
+                <span className="text-center text-sm font-medium text-gray-500">
                   {partner.name}
                 </span>
               )}
