@@ -84,7 +84,7 @@ export default async function NewsPostPage({ params }: PageProps) {
               {formatDate(post.frontmatter.date).toUpperCase()}
             </time>
             <span className="hidden h-3.5 w-px bg-gray-300 sm:block" aria-hidden="true" />
-            <span className="text-[0.8rem] font-medium tracking-wide text-gray-400">
+            <span className="text-[0.8rem] font-medium tracking-wide text-gray-500">
               {readTime} min read
             </span>
           </div>

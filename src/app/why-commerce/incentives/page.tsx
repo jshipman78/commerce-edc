@@ -187,7 +187,7 @@ export default function IncentivesPage() {
               </p>
             </div>
             <div>
-              <Card className="bg-navy-light border border-gray-600">
+              <div className="rounded-xl bg-navy-light border border-gray-600 p-6">
                 <h3 className="font-heading text-xl font-bold text-white">
                   OZ Investor Benefits
                 </h3>
@@ -211,11 +211,11 @@ export default function IncentivesPage() {
                   ].map((item) => (
                     <li key={item.benefit}>
                       <p className="font-semibold text-amber">{item.benefit}</p>
-                      <p className="mt-1 text-sm text-gray-200">{item.detail}</p>
+                      <p className="mt-1 text-sm text-gray-100">{item.detail}</p>
                     </li>
                   ))}
                 </ul>
-              </Card>
+              </div>
             </div>
           </div>
         </div>

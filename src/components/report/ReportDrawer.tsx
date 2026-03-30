@@ -108,13 +108,13 @@ export function ReportDrawer() {
               <h2 className="font-heading text-xl font-bold text-navy">
                 Report Builder
               </h2>
-              <p className="mt-0.5 text-sm text-gray-500">
+              <p className="mt-0.5 text-sm text-gray-600">
                 {sections.length} section{sections.length !== 1 ? 's' : ''} selected
               </p>
             </div>
             <button
               onClick={handleClose}
-              className="rounded-lg p-2 text-gray-400 transition-colors hover:bg-gray-100 hover:text-gray-600"
+              className="rounded-lg p-2 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700"
               aria-label="Close drawer"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -129,13 +129,13 @@ export function ReportDrawer() {
           {/* Selected Sections */}
           {selectedSections.length === 0 ? (
             <div className="py-12 text-center">
-              <svg className="mx-auto h-12 w-12 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <svg className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
-              <p className="mt-3 text-sm font-medium text-gray-500">
+              <p className="mt-3 text-sm font-medium text-gray-700">
                 No sections added yet
               </p>
-              <p className="mt-1 text-sm text-gray-400">
+              <p className="mt-1 text-sm text-gray-600">
                 Browse the site and click &quot;Add to Report&quot; on any data section.
               </p>
             </div>
@@ -148,11 +148,11 @@ export function ReportDrawer() {
                 >
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-semibold text-navy">{section!.title}</p>
-                    <p className="truncate text-xs text-gray-500">{section!.description}</p>
+                    <p className="truncate text-xs text-gray-600">{section!.description}</p>
                   </div>
                   <button
                     onClick={() => removeSection(section!.id)}
-                    className="ml-3 shrink-0 rounded-md p-1.5 text-gray-400 transition-colors hover:bg-red-50 hover:text-red-500"
+                    className="ml-3 shrink-0 rounded-md p-1.5 text-gray-500 transition-colors hover:bg-red-50 hover:text-red-500"
                     aria-label={`Remove ${section!.title}`}
                   >
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -210,7 +210,7 @@ export function ReportDrawer() {
 
             <div>
               <label htmlFor="report-email" className="block text-sm text-gray-700">
-                Email for follow-up <span className="text-gray-400">(optional)</span>
+                Email for follow-up <span className="text-gray-500">(optional)</span>
               </label>
               <input
                 id="report-email"
@@ -259,7 +259,7 @@ export function ReportDrawer() {
           {sections.length > 0 && (
             <button
               onClick={clearAll}
-              className="mt-2 w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700"
+              className="mt-2 w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-700"
             >
               Clear All
             </button>

@@ -21,8 +21,8 @@ export function Footer() {
               className="h-20 w-auto brightness-0 invert"
             />
             <h3 className="mt-3 font-heading text-lg font-bold leading-snug text-white">Commerce EDC</h3>
-            <p className="mt-2 text-sm leading-relaxed text-gray-300">{siteConfig.description}</p>
-            <div className="mt-4 space-y-1.5 text-sm text-gray-300">
+            <p className="mt-2 text-sm leading-relaxed text-gray-200">{siteConfig.description}</p>
+            <div className="mt-4 space-y-1.5 text-sm text-gray-200">
               <p>{siteConfig.address.street}</p>
               <p>{siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</p>
               <p>
@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-navy-light pt-8 text-center text-sm text-gray-400">
+        <div className="mt-12 border-t border-navy-light pt-8 text-center text-sm text-gray-300">
           <p>&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
           <p className="mt-1.5 font-heading text-sm font-semibold tracking-wide text-amber-light/70">Commerce Means Business</p>
         </div>

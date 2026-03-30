@@ -36,7 +36,7 @@ export default function AvailableBuildingsPage() {
                     />
                   ) : (
                     <div className="flex h-full items-center justify-center">
-                      <span className="text-sm text-gray-400">Building Image</span>
+                      <span className="text-sm text-gray-500">Building Image</span>
                     </div>
                   )}
                 </div>

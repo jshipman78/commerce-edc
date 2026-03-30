@@ -80,7 +80,7 @@ export function ReportFloatingBar() {
                     <span className="block text-sm font-semibold text-green">
                       {justAdded ? 'Added!' : 'In Your Report'}
                     </span>
-                    <span className="block truncate text-xs text-white/50">
+                    <span className="block truncate text-xs text-white/70">
                       {currentSection.title} — tap to remove
                     </span>
                   </>
@@ -89,7 +89,7 @@ export function ReportFloatingBar() {
                     <span className="block text-sm font-semibold text-white">
                       Add to Report
                     </span>
-                    <span className="block truncate text-xs text-white/50">
+                    <span className="block truncate text-xs text-white/70">
                       {currentSection.title}
                     </span>
                   </>

@@ -113,7 +113,7 @@ export default function LocationPage() {
               />
             </div>
             <div>
-              <Card className="bg-navy text-white">
+              <div className="rounded-xl bg-navy p-6 text-white shadow-md">
                 <h3 className="font-heading text-xl font-bold text-white">
                   Location Snapshot
                 </h3>
@@ -126,13 +126,13 @@ export default function LocationPage() {
                     'Population: approximately 10,000',
                     'Home to East Texas A&M University',
                   ].map((item) => (
-                    <li key={item} className="flex items-start text-sm text-gray-200">
+                    <li key={item} className="flex items-start text-sm text-gray-100">
                       <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber" />
                       {item}
                     </li>
                   ))}
                 </ul>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function LocationPage() {
                     { label: 'Lighting', value: 'Medium Intensity Runway Lights (MIRL)' },
                   ].map((spec) => (
                     <li key={spec.label} className="flex justify-between text-sm">
-                      <span className="text-gray-500">{spec.label}</span>
+                      <span className="text-gray-600">{spec.label}</span>
                       <span className="font-medium text-gray-800">{spec.value}</span>
                     </li>
                   ))}
@@ -246,7 +246,7 @@ export default function LocationPage() {
                     { label: 'Dallas Love Field (DAL)', value: 'Approximately 1.25 hours' },
                   ].map((airport) => (
                     <li key={airport.label} className="flex justify-between text-sm">
-                      <span className="text-gray-500">{airport.label}</span>
+                      <span className="text-gray-600">{airport.label}</span>
                       <span className="font-medium text-gray-800">{airport.value}</span>
                     </li>
                   ))}

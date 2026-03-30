@@ -129,7 +129,7 @@ export function Header() {
           <a href={`tel:${siteConfig.phone}`} className="font-medium hover:text-amber-light">
             {siteConfig.phone}
           </a>
-          <span className="hidden text-white/80 sm:block">{siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</span>
+          <span className="hidden text-white/90 sm:block">{siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</span>
         </div>
       </div>
 

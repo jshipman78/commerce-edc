@@ -13,7 +13,7 @@ export function StatCard({ value, label, icon, index = 0 }: StatCardProps) {
     >
       {icon && <div className="mx-auto mb-2 text-amber">{icon}</div>}
       <div className="font-heading text-3xl font-bold leading-none text-white sm:text-4xl">{value}</div>
-      <div className="mt-2 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-300">{label}</div>
+      <div className="mt-2 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-100">{label}</div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function NewsCard({ post }: { post: NewsPost }) {
           />
         </div>
       )}
-      <time className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-400">{formatDate(post.date)}</time>
+      <time className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-600">{formatDate(post.date)}</time>
       <h3 className="mt-2 font-heading text-lg font-bold leading-snug text-navy">
         <Link href={`/news/${post.slug}`} className="hover:text-amber">
           {post.title}

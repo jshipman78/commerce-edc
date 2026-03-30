@@ -18,7 +18,7 @@ export function PropertyCard({ property }: { property: Property }) {
           />
         ) : (
           <div className="flex h-full items-center justify-center">
-            <span className="text-sm text-gray-400">Property Image</span>
+            <span className="text-sm text-gray-500">Property Image</span>
           </div>
         )}
       </div>

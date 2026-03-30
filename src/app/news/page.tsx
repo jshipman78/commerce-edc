@@ -40,7 +40,7 @@ export default function NewsPage() {
                     </div>
                   )}
                   <div className="flex-1">
-                    <time className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-400">{formatDate(post.date)}</time>
+                    <time className="text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-gray-600">{formatDate(post.date)}</time>
                     <h2 className="mt-2 font-heading text-xl font-bold leading-snug text-navy">
                       <Link href={`/news/${post.slug}`} className="hover:text-amber transition-colors">
                         {post.title}
@@ -60,7 +60,7 @@ export default function NewsPage() {
           </div>
 
           {posts.length === 0 && (
-            <p className="py-12 text-center text-gray-500">No news posts yet.</p>
+            <p className="py-12 text-center text-gray-600">No news posts yet.</p>
           )}
         </div>
       </section>

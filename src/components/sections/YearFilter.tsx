@@ -58,7 +58,7 @@ export function YearFilter({ documents }: { documents: BoardDocument[] }) {
           <tbody className="divide-y divide-gray-100 bg-white">
             {filtered.map((doc) => (
               <tr key={doc.id} className="hover:bg-cream/50">
-                <td className="whitespace-nowrap px-4 py-3 text-sm text-gray-500">
+                <td className="whitespace-nowrap px-4 py-3 text-sm text-gray-600">
                   {formatDate(doc.date)}
                 </td>
                 <td className="px-4 py-3 text-sm font-medium text-gray-700">
@@ -88,7 +88,7 @@ export function YearFilter({ documents }: { documents: BoardDocument[] }) {
                       ))}
                     </span>
                   ) : (
-                    <span className="text-sm text-gray-400">—</span>
+                    <span className="text-sm text-gray-500">—</span>
                   )}
                 </td>
               </tr>
@@ -98,7 +98,7 @@ export function YearFilter({ documents }: { documents: BoardDocument[] }) {
       </div>
 
       {filtered.length === 0 && (
-        <p className="py-8 text-center text-sm text-gray-500">No documents found for this year.</p>
+        <p className="py-8 text-center text-sm text-gray-600">No documents found for this year.</p>
       )}
     </div>
   );

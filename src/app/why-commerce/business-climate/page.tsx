@@ -113,7 +113,7 @@ export default function BusinessClimatePage() {
               </p>
             </div>
             <div>
-              <Card className="bg-navy text-white">
+              <div className="rounded-xl bg-navy p-6 text-white shadow-md">
                 <h3 className="font-heading text-xl font-bold text-white">
                   University at a Glance
                 </h3>
@@ -126,13 +126,13 @@ export default function BusinessClimatePage() {
                     'Customized workforce training partnerships',
                     'Applied research collaborations with industry',
                   ].map((item) => (
-                    <li key={item} className="flex items-start text-sm text-gray-200">
+                    <li key={item} className="flex items-start text-sm text-gray-100">
                       <span className="mr-2 mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-amber" />
                       {item}
                     </li>
                   ))}
                 </ul>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
