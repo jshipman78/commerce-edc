@@ -10,12 +10,24 @@ const slides = [
     alt: 'Aerial view of Hydro Extrusion industrial facility in Commerce, Texas',
   },
   {
-    src: '/images/community/campus-aerial.jpeg',
-    alt: 'Aerial view of Texas A&M University-Commerce campus',
+    src: '/images/hero/commerce-water-tower.jpg',
+    alt: 'Aerial view of Commerce, Texas with iconic water tower',
   },
   {
-    src: '/images/community/railroad-sunset.jpg',
-    alt: 'Railroad infrastructure at sunset in Commerce, Texas',
+    src: '/images/community/university-fountain.jpg',
+    alt: 'East Texas A&M University fountain and modern campus buildings',
+  },
+  {
+    src: '/images/community/campus-aerial.jpeg',
+    alt: 'Aerial view of East Texas A&M University campus',
+  },
+  {
+    src: '/images/community/splash-pad-aerial.jpg',
+    alt: 'Splash pad grand opening celebrating community investment in Commerce',
+  },
+  {
+    src: '/images/community/klz-stone-interior.jpg',
+    alt: 'Active manufacturing floor at KLZ Stone Group in Commerce, Texas',
   },
 ];
 
@@ -23,6 +35,9 @@ const kenBurnsVariants = [
   'kenBurns1 20s ease-in-out infinite alternate',
   'kenBurns2 22s ease-in-out infinite alternate',
   'kenBurns3 18s ease-in-out infinite alternate',
+  'kenBurns1 24s ease-in-out infinite alternate',
+  'kenBurns2 19s ease-in-out infinite alternate',
+  'kenBurns3 21s ease-in-out infinite alternate',
 ];
 
 export function Hero() {

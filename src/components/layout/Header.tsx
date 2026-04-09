@@ -135,14 +135,14 @@ export function Header() {
 
       {/* Main nav */}
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-between lg:h-24">
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo/edc-logo.png"
               alt="Commerce EDC"
-              width={200}
-              height={155}
-              className="h-16 w-auto"
+              width={400}
+              height={310}
+              className="h-16 w-auto lg:h-[80px]"
               priority
             />
           </Link>

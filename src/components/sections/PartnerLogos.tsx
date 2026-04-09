@@ -12,7 +12,7 @@ export function PartnerLogos() {
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="flex h-24 w-44 items-center justify-center rounded-lg bg-gray-100 px-5"
+              className="flex h-24 w-44 items-center justify-center rounded-lg bg-navy px-5"
             >
               {partner.logo ? (
                 <Image
@@ -20,7 +20,7 @@ export function PartnerLogos() {
                   alt={partner.name}
                   width={160}
                   height={80}
-                  className="max-h-16 w-auto object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
+                  className="max-h-16 w-auto object-contain"
                 />
               ) : (
                 <span className="text-center text-sm font-medium text-gray-500">

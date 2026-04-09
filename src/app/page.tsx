@@ -1,5 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
 import { StatBar } from '@/components/sections/StatBar';
+import { WhyCommercePillars } from '@/components/sections/WhyCommercePillars';
+import { FeaturedShowcase } from '@/components/sections/FeaturedShowcase';
 import { NewsFeedPreview } from '@/components/sections/NewsFeedPreview';
 import { AgendaSidebar } from '@/components/sections/AgendaSidebar';
 import { PartnerLogos } from '@/components/sections/PartnerLogos';
@@ -34,6 +36,8 @@ export default function HomePage() {
 
       <Hero />
       <StatBar />
+      <WhyCommercePillars />
+      <FeaturedShowcase />
 
       <div className="mx-auto max-w-7xl px-4 py-16 sm:py-20">
         <div className="grid gap-8 lg:grid-cols-3">
